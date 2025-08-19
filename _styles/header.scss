@@ -1,8 +1,8 @@
 ---
 ---
 
-$logo-big: 80px;
-$logo: 40px;
+$logo-big: 400px;
+$logo: 80px;
 $big-padding: 12%;
 $collapse: 700px;
 $sticky: true;
@@ -39,9 +39,17 @@ header a {
 }
 
 .logo {
-  height: $logo;
+  height: $logo; // 非主页默认使用 $logo 变量（40px）
+
+  @media (max-width: 768px) { // 手机端阈值
+    height: 80px; // 手机端统一尺寸
+  }
 }
 
+// 主页的 logo 保持大尺寸
+header[data-big] .logo {
+  height: $logo-big; // 使用 350px 大尺寸
+}
 .logo > * {
   height: 100%;
 }

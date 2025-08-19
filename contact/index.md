@@ -7,16 +7,16 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}联系我们
 
-狼牙战队欢迎所有热爱机器人的同学加入！
+山东理工大学齐奇战队欢迎所有热爱机器人的同学加入!!
 
-湖北省武汉市洪山区珞喻路 1037 号
-华中科技大学智能互联网湖北省重点实验室
+山东省淄博市张店区新村西路266号
+山东理工大学齐奇战队
 
 {%
   include button.html
   type="email"
-  text="hustrobomaster@163.com"
-  link="hustrobomaster@163.com"
+  text="sdutqiqi@163.com"
+  link="sdqutqiqi@163.com"
 %}
 
 {%

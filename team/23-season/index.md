@@ -13,19 +13,17 @@ title: 成员
 
 {% include list_portrait.html data="members" component="portrait" filters="role: 指导老师" %}
 
-## {% include icon.html icon="fa-solid fa-users" %}团队负责人
-{% include list_portrait.html data="members" component="portrait" filters="type: 23赛季团队负责人,time: 23" style="small"  %}
+## {% include icon.html icon="fa-solid fa-users" %}队长
+{% include list_portrait.html data="members" component="portrait" filters="type: 23赛季队长,time: 23" style="small"  %}
 
 ## {% include icon.html icon="fa-solid fa-users" %}机械组
   
 {% include list_portrait.html data="members" component="portrait" filters="role: 机械组, time:23" style="small" %}
 
-## {% include icon.html icon="fa-solid fa-users" %}电路组
+## {% include icon.html icon="fa-solid fa-users" %}电控组
 
-{% include list_portrait.html data="members" component="portrait" filters="role: 电路组, time:23" style="small" %}
-## {% include icon.html icon="fa-solid fa-users" %}嵌软组
+{% include list_portrait.html data="members" component="portrait" filters="role: 电控组, time:23" style="small" %}
 
-{% include list_portrait.html data="members" component="portrait" filters="role: 嵌软组,time: 23" style="small"  %}
 ## {% include icon.html icon="fa-solid fa-users" %}算法组
 
 {% include list_portrait.html data="members" component="portrait" filters="role: 算法组, time:23" style="small" %}

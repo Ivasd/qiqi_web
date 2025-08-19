@@ -58,6 +58,12 @@
           {% if member.time %}
             {{ member.time }} 赛季主力
           {% endif %}
+          
+          <!-- 新增：换行后显示职位信息 -->
+          {% if member.position %}
+            <br> <!-- 这里添加换行标签 -->
+            <span>{{ member.position }}</span>
+          {% endif %}
           </span>
         {% endif %}
       </span>
@@ -93,7 +99,4 @@
     </div>
 
   {% endif %}
-
-
-
 </div>

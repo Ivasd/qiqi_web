@@ -1,16 +1,16 @@
 # site properties and page defaults
-title: 12345
+title: 齐奇战队
 subtitle: 
-description: 123456 
+description:   齐心协力  创造奇迹
 header: images/background.jpg
 header-video: images/bgvideo.mp4
 footer: images/background.jpg
 proofer: false
-slogan: 一往无前华科行，气壮山河狼牙名
+slogan:   齐心协力  创造奇迹
 # site social media and other links
 links:
-  email: 123456@qq.com
-  github: 123456test
+  email: contact@qq.com
+  github: Ivasd
   bilibili: "475402455"
   wechat: https://mp.weixin.qq.com/s/Zrk4PRRGSimJG9bVDj3Zsg
 ## jekyll settings
