@@ -27,7 +27,16 @@ header a {
 }
 
 .logo {
-  height: 40px;
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .logo {
+    height: 80px;
+  }
+}
+
+header[data-big] .logo {
+  height: 400px;
 }
 
 .logo > * {
@@ -128,7 +137,7 @@ header[data-big] .home {
   flex-grow: 0;
 }
 header[data-big] .logo {
-  height: 80px;
+  height: 400px;
 }
 header[data-big] .title-text {
   flex-direction: column;
