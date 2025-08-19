@@ -9,8 +9,8 @@ proofer: false
 slogan: 一往无前华科行，气壮山河狼牙名
 # site social media and other links
 links:
-  email: 123456
-  github: 123456
+  email: 123456@qq.com
+  github: 123456test
   bilibili: "475402455"
   wechat: https://mp.weixin.qq.com/s/Zrk4PRRGSimJG9bVDj3Zsg
 ## jekyll settings
