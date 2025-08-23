@@ -23,7 +23,7 @@ nav:
   include button.html
   type="address"
   tooltip="我们实验室的地址"
-  link="https://surl.amap.com/1vpaONXCHaR5"
+  link="https://surl.amap.com/2F5XT6i1tbcs"
 %}
 
 {% include section.html %}

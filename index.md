@@ -22,6 +22,13 @@
 {%
   include button.html
   type="docs"
+  text="2025级新生交流群"
+  icon="fa-brands fa-qq"
+  link="https://qm.qq.com/q/yoHUd3Zv0s"
+%}
+{%
+  include button.html
+  type="docs"
   text="微信公众号"
   icon="fa-brands fa-weixin"
   link="https://mp.weixin.qq.com/s/Xie4fRxcmpFNE0wtAc15Jg"

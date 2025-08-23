@@ -1,0 +1,58 @@
+{% comment %}
+  可自定义大小和对齐方式的图片组件
+  参数说明:
+  - image: 图片路径 (必填)
+  - width: 容器宽度 (可选，默认40%)
+  - maxWidth: 最大宽度 (可选)
+  - height: 容器高度 (可选，不填则按比例)
+  - flip: 是否翻转布局 (可选，默认false)
+  - alignment: 对齐方式 (可选，left/right/center，默认center)
+  - link: 图片链接 (可选)
+  - title: 标题 (可选)
+  - text: 描述文本 (可选)
+  - objectFit: 图片适应方式 (可选，默认cover)
+  - objectPosition: 图片裁剪位置 (可选，默认center)
+  - useOriginalRatio: 是否使用原图比例 (可选，默认false)
+  - caption: 图片底部注释 (可选)
+{% endcomment %}
+
+<div
+  class="pic-container"
+  {% if include.flip %}data-flip{% endif %}
+  {% if include.alignment %}data-alignment="{{ include.alignment }}"{% endif %}
+  style="
+    {% if include.width %}--pic-width: {{ include.width }};{% endif %}
+    {% if include.maxWidth %}--pic-max-width: {{ include.maxWidth }};{% endif %}
+    {% if include.height %}--pic-height: {{ include.height }};{% endif %}
+    {% if include.aspectRatio %}--pic-aspect-ratio: {{ include.aspectRatio }};{% endif %}
+    {% if include.objectFit %}--pic-object-fit: {{ include.objectFit }};{% endif %}
+    {% if include.objectPosition %}--pic-object-position: {{ include.objectPosition }};{% endif %}
+    {% if include.useOriginalRatio %}--use-original-ratio: 1;{% endif %}
+  "
+>
+  <div class="pic-wrapper">
+    <a
+      {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
+      class="pic-image"
+      aria-label="{{ include.title | default: "Picture link" }}"
+    >
+      <img
+        src="{{ include.image | relative_url }}"
+        loading="lazy"
+        alt="{{ include.title | default: "Picture" }}"
+        {% include fallback.html %}
+      >
+    </a>
+
+    {% if include.caption %}
+      <p class="pic-caption">{{ include.caption }}</p>
+    {% endif %}
+  </div>
+
+  <div class="pic-text">
+    {% if include.title %}
+      <p class="pic-title">{{ include.title }}</p>
+    {% endif %}
+    {{ include.text | markdownify }}
+  </div>
+</div>

@@ -20,7 +20,7 @@ nav:
 
 {%
   include feature.html
-  image="images/projects/rm/1.png"
+  image="images/projects/rm/hero.jpg"
   link="projects"
   title="英雄机器人"
   flip=false
@@ -106,9 +106,10 @@ nav:
 %}
 
 {% capture text %}
-<front size=30>这个你自己发挥<br></front>
+全自动导航：依托全向舵轮系统提供的高精度里程计，深度融合激光雷达DLIO定位算法与PCL点云处理技术，并采用TEB局部路径规划算法，实现机器人在复杂环境中的平滑、稳定与高精度自主导航。
+全自动运行：通过卡尔曼滤波算法融合多传感器数据，实现对机器人自身运动状态的精确感知与预测；结合TF坐标变换体系，构建统一的时空基准框架，并运用PNP解算算法实时计算目标物体的三维位姿，为自主决策提供高精度的定位信息。
 
-<front size=30>吹nb 别人家烧啥样咱就啥样</front>
+全自动识别：采用海康威视高性能工业相机进行图像采集，基于OpenCV计算机视觉库进行图像预处理与特征提取，结合深度学习神经网络算法实现复杂场景下的数字识别与目标检测，确保识别过程的准确性、实时性与鲁棒性。
 {% endcapture %}
 
 {%
