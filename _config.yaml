@@ -9,10 +9,9 @@ proofer: false
 slogan:   齐心协力  创造奇迹
 # site social media and other links
 links:
-  email: contact@qq.com
-  github: Ivasd
-  bilibili: "475402455"
-  wechat: https://mp.weixin.qq.com/s/Zrk4PRRGSimJG9bVDj3Zsg
+  qq: https://qm.qq.com/q/vphBNjAXmg
+  bilibili: "510329063"
+  wechat: https://mp.weixin.qq.com/s/Xie4fRxcmpFNE0wtAc15Jg
 ## jekyll settings
 
 # front matter defaults

@@ -130,6 +130,11 @@ wechat:
   text: WeChat
   tooltip: WeChat
 
+qq:
+  icon: fa-brands fa-qq
+  text: QQ
+  tooltip: QQ
+
 # alerts
 
 tip:

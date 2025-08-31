@@ -29,12 +29,13 @@
       {% include button.html type=key text="" icon=link.icon link=value style="bare" %}
     {% endfor %}
     <br>
-    <!-- {% include button.html type="links" text="狼牙数据站" link="http://db.hustlangya.fun" style="bare" icon="fa-solid fa-database"%} -->
-  </div>
-
-  <div>
+   {% include button.html type="links" text="联系我们" link="contact" style="bare" icon="fa-regular fa-envelope"%} 
+    <br>
     &copy; {{ site.time | date: "%Y" }}
-    {{ site.title }}
+      {{ site.title }}
+  </div>
+ 
+  <div>
     
   </div>
 

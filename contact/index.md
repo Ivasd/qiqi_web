@@ -1,8 +1,5 @@
 ---
 title: 联系
-nav:
-  order: 6
-  tooltip: 邮件、电话、地址
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}联系我们
@@ -28,4 +25,4 @@ nav:
 
 {% include section.html %}
 
-企业赞助或合作事务洽谈，请联系微信：bao1037rm。
+企业赞助或合作事务洽谈，请联系QQ：2081951913。
