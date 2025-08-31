@@ -1,0 +1,98 @@
+@charset "UTF-8";
+.tolink {
+  display: inline-flex;
+  justify-content: flex-start; /* 保持图片左对齐 */
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: 15px auto;
+  background: var(--background);
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* 响应式调整：小屏幕缩小元素尺寸 */
+@media (max-width: 768px) {
+  .tolink {
+    max-width: 95%; /* 手机端更宽一些 */
+    min-width: 280px; /* 确保不会过于狭窄 */
+  }
+  .tolink-image {
+    width: 120px; /* 手机端图片容器缩小 */
+    height: 100px;
+    padding: 8px; /* 手机端稍小的内边距 */
+  }
+  .tolink-text {
+    padding: 10px 15px; /* 减少手机端内边距 */
+    gap: 8px; /* 减少元素间距 */
+    flex: 1; /* 关键：在手机端同样保持占据剩余空间 */
+  }
+}
+.tolink[data-style=small] {
+  width: 250px;
+}
+
+.tolink-image {
+  width: 480px; /* 桌面端图片容器尺寸 */
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden; /* 隐藏超出容器的部分 */
+  padding: 10px; /* 保留内边距，让图片和边框有间距 */
+  box-sizing: border-box; /* 确保内边距不会增加容器总尺寸 */
+}
+
+.tolink-image img {
+  width: 100%; /* 宽度充满带内边距的容器 */
+  height: 100%; /* 高度充满带内边距的容器 */
+  object-fit: cover; /* 保持比例并充满空间 */
+}
+
+.tolink:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border: 2px solid var(--primary-color);
+  transform: translateY(-7px) translateX(7px);
+}
+
+.tolink-text {
+  display: flex;
+  justify-content: center; /* 文字区域内部居中 */
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1; /* 关键：让文字区域占据剩余所有空间 */
+  padding: 20px;
+  text-align: center; /* 文本本身本身居中 */
+}
+
+.tolink-text > * {
+  margin: 0 !important;
+  width: 100%;
+}
+
+.tolink-title {
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  font-size: clamp(1.2rem, 4vw, 1.8rem); /* 响应式字体，小屏幕自动缩小 */
+}
+
+.tolink-subtitle {
+  margin-top: -10px !important;
+  font-style: italic;
+  text-align: center;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+}
+
+/* 描述文字响应式适配 */
+.tolink-text p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+/*# sourceMappingURL=tolink.css.map */
